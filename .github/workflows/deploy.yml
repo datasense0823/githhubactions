@@ -1,5 +1,5 @@
 name: My Pizza Delivery
-on: workflow_dispatch
+on: [push,workflow_dispatch]
 
 jobs:
     Order-Online:
@@ -7,6 +7,12 @@ jobs:
         steps:
             - name: Open Mobile
               run: echo "Opened"
+            
+            - name: Explore Food
+              run: echo "I want to eat Pizza"
+
+            - name: Make Payment
+              run: echo "Make the Payment of $50"
 
 
 
