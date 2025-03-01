@@ -1,12 +1,12 @@
 name: My Pizza Delivery
-on: push
+on: workflow_dispatch
 
 jobs:
     Order-Online:
         runs-on: macos-latest
         steps:
             - name: Open Mobile
-              run: echo "Opened Mobile"
+              run: echo "Opened"
 
 
 
